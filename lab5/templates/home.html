@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Объявления</h1>
+<ul>
+  {% for post in object_list %}
+    <li>{{ post }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
